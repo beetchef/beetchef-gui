@@ -28,13 +28,13 @@ find_package(Qt5 COMPONENTS Core Quick REQUIRED)
 
 if(ANDROID)
     add_library(beetchef-gui SHARED
-      main.cpp
-      qml.qrc
+      src/main.cpp
+      resources/qml.qrc
     )
 else()
     add_executable(beetchef-gui
-      main.cpp
-      qml.qrc
+      src/main.cpp
+      resources/qml.qrc
     )
 endif()
 
